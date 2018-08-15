@@ -6,21 +6,27 @@
   "repository": "https://github.com/daddou-ma/bundling",
   "author": "Mohamed El Amine DADDOU",
   "license": "MIT",
-  "private": null,
+  "private": false,
   "scripts": {
-    "dev": "webpack --config webpack.config.dev.js"
+    "dev": "webpack --config webpack.config.dev.js",
+    "test": "mocha"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint-config-airbnb": "^17.1.0",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
   },
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint": "^4.19.1",
     "eslint-loader": "^2.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "flow-bin": "^0.78.0",
+    "mocha": "^5.2.0"
   }
 }

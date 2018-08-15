@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
   ],
+  target: 'node',
   devtool: 'cheap-source-map',
   mode: 'development',
 };
