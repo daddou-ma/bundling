@@ -1,4 +1,5 @@
 const path = require('path');
+const FlowtypePlugin = require('flowtype-loader/plugin');
 
 module.exports = {
   entry: './index.js',
@@ -10,10 +11,11 @@ module.exports = {
     rules: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      use: ['babel-loader', 'eslint-loader'],
+      use: ['babel-loader', 'eslint-loader', 'flowtype-loader'],
     }],
   },
   plugins: [
+    new FlowtypePlugin(),
   ],
   target: 'node',
   devtool: 'cheap-source-map',

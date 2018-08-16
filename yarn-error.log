@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn dev
+  /usr/bin/node /usr/bin/yarn test
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -24,7 +24,8 @@ npm manifest:
     "license": "MIT",
     "private": false,
     "scripts": {
-      "dev": "webpack --config webpack.config.dev.js"
+      "dev": "webpack --config webpack.config.dev.js",
+      "test": "mocha"
     },
     "dependencies": {
       "babel-core": "^6.26.3",
@@ -40,7 +41,10 @@ npm manifest:
       "eslint": "^4.19.1",
       "eslint-loader": "^2.1.0",
       "eslint-plugin-flowtype": "^2.50.0",
-      "eslint-plugin-import": "^2.14.0"
+      "eslint-plugin-import": "^2.14.0",
+      "flow-bin": "^0.78.0",
+      "flowtype-loader": "^0.2.2",
+      "mocha": "^5.2.0"
     }
   }
 
@@ -4154,9 +4158,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 2
+  Exit code: 1
   Command: sh
-  Arguments: -c webpack --config webpack.config.dev.js
+  Arguments: -c mocha
   Directory: /home/john/Desktop/bundling
   Output:
   

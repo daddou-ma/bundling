@@ -1,5 +1,5 @@
 node_modules/
 dist/
 .flowconfig
-.vscode/
+.vscode
 yarn-error.log

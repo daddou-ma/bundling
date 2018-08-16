@@ -3,9 +3,7 @@
 import {
   getFileExtension,
   getFileContent,
-  isRelativePath,
-} from './src/file.handler';
+} from './src/file';
 
 console.log(getFileExtension('package.json'));
 console.log(getFileContent('package.json'));
-console.log(isRelativePath('./package.json'));
