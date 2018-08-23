@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "./node_modules/.bin/webpack --config webpack.config.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.dev.js",
+    "cover": "nyc npm t",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register"
   },
   "dependencies": {
@@ -34,6 +36,7 @@
     "eslint-plugin-import": "^2.14.0",
     "flow-bin": "^0.78.0",
     "flowtype-loader": "^0.2.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   }
 }
