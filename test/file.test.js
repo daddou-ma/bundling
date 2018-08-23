@@ -17,7 +17,7 @@ describe('file.js', () => {
     }
   });
 
-  describe('#isCoreModule()', () => {
+  describe('#isModule()', () => {
     it('http return true', () => {
       assert.equal(isModule('http'), true);
     });
