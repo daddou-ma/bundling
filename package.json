@@ -14,6 +14,11 @@
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "commit": "git-cz"
   },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
+  },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
   },
@@ -42,6 +47,7 @@
     "eslint-plugin-import": "^2.14.0",
     "flow-bin": "^0.78.0",
     "flowtype-loader": "^0.2.2",
+    "ghooks": "^2.0.4",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
   }
