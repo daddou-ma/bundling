@@ -11,7 +11,11 @@
     "build": "./node_modules/.bin/webpack --config webpack.config.dev.js",
     "cover": "nyc npm t",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "commit": "git-cz"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   },
   "dependencies": {
     "@babel/parser": "^7.0.0-rc.1",
@@ -30,6 +34,8 @@
     "webpack-cli": "^3.1.0"
   },
   "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.1.0",
     "eslint-plugin-flowtype": "^2.50.0",
